@@ -1,0 +1,118 @@
+/* Variable */
+$default-font-size: 15px;
+$name-size: 1.6em;
+$bold-weight: 600;
+$line-height: 1.2em;
+
+$address-width: 190px;
+
+$section-spacing: 0.8em;
+$section-left-spacing: 15%;
+$instance-width-ratio: 76%;
+$instance-spacing: 0.5em;
+
+$language-grid-width: 100%;
+$language-grid-template: repeat(3,1fr)/repeat(5,1fr) 2fr;
+$framework-grid-width: 100%;
+$framework-grid-template: repeat(3,1fr)/repeat(4,1fr);
+/* Global Setting */
+body{
+  font-family: Cambria, Georgia, serif;
+  font-size: $default-font-size;
+  line-height: $line-height;
+}
+a:link,a:visited,a:hover,a:active{
+  color: initial;
+  text-decoration: none;
+}
+hr{
+  height: 0.15em;
+  border: 0;
+  background-color: black;
+  color: black
+}
+.content {
+  margin: 0 2em;
+  // border: 1px solid black;
+}
+b{
+  font-weight: $bold-weight;
+}
+ul{
+  list-style-type:disc;
+  margin: 0;
+  padding-left: 16px;
+  li{
+    font-size: 1em;
+  }
+}
+/* Header--Personal Infomation */
+.header{
+  margin-top:2em; 
+  text-align: center;
+  .name{
+    font-weight: bold;
+    font-size: $name-size;
+  }
+  .info{
+    display: flex;
+    justify-content: space-between;
+    .address{
+      text-align: left;
+      width: $address-width;
+    }
+    .contact{
+      text-align: right;
+    }
+  }
+}
+
+/* Main Content */
+.main{
+
+}
+
+/* Main Content Flex+Grid Layout */
+.section{
+  display: flex;
+  padding-bottom: $section-spacing;
+  >.section-name{
+    flex-basis: $section-left-spacing;
+  }
+  >.wrapper{
+    flex-basis: 100%-$section-left-spacing;
+    >.instance{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: $instance-spacing;
+      >.left{
+        flex-basis: $instance-width-ratio;
+      }
+      >.right{
+        flex-basis: 100%-$instance-width-ratio;
+      }
+      >.bottom{
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+/* Grid class for skills section*/
+.my-language-grid{
+  display: grid;
+  width: $language-grid-width;
+  grid-template: $language-grid-template;
+  >.item{
+
+  }
+}
+
+.my-frameworks-grid{
+  display: grid;
+  width: $framework-grid-width;
+  grid-template: $framework-grid-template;
+  >.item{
+
+  }
+}
