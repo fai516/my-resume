@@ -1,7 +1,7 @@
 /* Variable */
 /* Global Setting */
 body {
-  font-family: Cambria, Georgia, serif;
+  font-family: "Helvetica Neue",sans-serif;
   font-size: 15px;
   line-height: 1.2em;
 }
@@ -16,10 +16,12 @@ hr {
   border: 0;
   background-color: black;
   color: black;
+  margin-top: 1em;
 }
 
 .content {
   margin: 0 2em;
+  margin-top: 4em;
 }
 
 b {
@@ -56,12 +58,12 @@ ul li {
           justify-content: space-between;
 }
 
-.header .info .address {
+.header .info .left {
   text-align: left;
   width: 190px;
 }
 
-.header .info .contact {
+.header .info .right {
   text-align: right;
 }
 
@@ -71,7 +73,7 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 0.8em;
+  padding-bottom: 1em;
 }
 
 .section > .section-name {
@@ -114,8 +116,8 @@ ul li {
   display: grid;
   width: 100%;
   -ms-grid-rows: (1fr)[3];
-  -ms-grid-columns: (1fr)[5] 2fr;
-      grid-template: repeat(3, 1fr)/repeat(5, 1fr) 2fr;
+  -ms-grid-columns: (1fr)[4] 1fr;
+      grid-template: repeat(3, 1fr)/repeat(4, 1fr) 1fr;
 }
 
 .my-frameworks-grid {
