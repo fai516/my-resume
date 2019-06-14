@@ -1,0 +1,19 @@
+{
+  "name": "my-resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fai516/my-resume.git",
+  "author": "Jason Siu <jason.siu@qupital.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.5.2"
+  }
+}
