@@ -1,9 +1,15 @@
 /* Variable */
 /* Global Setting */
+@media print {
+  hr {
+    display: block;
+  }
+}
+
 body {
   font-family: "Helvetica Neue",sans-serif;
   font-size: 15px;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -73,17 +79,17 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1em;
+  padding-bottom: 0.85em;
 }
 
 .section > .section-name {
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
 }
 
 .section > .wrapper {
-  -ms-flex-preferred-size: 85%;
-      flex-basis: 85%;
+  -ms-flex-preferred-size: 83%;
+      flex-basis: 83%;
 }
 
 .section > .wrapper > .instance {
@@ -92,17 +98,17 @@ ul li {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
 
 .section > .wrapper > .instance > .left {
-  -ms-flex-preferred-size: 76%;
-      flex-basis: 76%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
 }
 
 .section > .wrapper > .instance > .right {
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
 .section > .wrapper > .instance > .bottom {

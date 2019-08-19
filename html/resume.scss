@@ -2,20 +2,24 @@
 $default-font-size: 15px;
 $name-size: 1.6em;
 $bold-weight: 600;
-$line-height: 1.2em;
+$line-height: 1.3em;
 
 $address-width: 190px;
 
-$section-spacing: 1em;
-$section-left-spacing: 15%;
-$instance-width-ratio: 76%;
-$instance-spacing: 0.5em;
+$section-spacing: 0.85em;
+$section-left-spacing: 17%;
+$instance-width-ratio: 75%;
+$instance-spacing: 0.75em;
 
 $language-grid-width: 100%;
 $language-grid-template: repeat(3,1fr)/repeat(4,1fr) 1fr;
 $framework-grid-width: 100%;
 $framework-grid-template: repeat(3,1fr)/repeat(4,1fr);
 /* Global Setting */
+@media print {
+  hr { display:block; }
+}
+
 body{
   font-family: "Helvetica Neue",sans-serif; 
   font-size: $default-font-size;
